@@ -1,1 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda de Cosplay a Pedido</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Tienda de Cosplay a Pedido</h1>
+        <nav>
+            <ul>
+                <li><a href="#productos-generales">Productos Generales</a></li>
+                <li><a href="#productos-berserk">Productos de Berserk</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="productos-generales">
+            <h2>Productos Generales</h2>
+            <div class="producto">
+                <img src="https://miro.medium.com/v2/resize:fit:4800/format:webp/1*d80k8EYLIz2fGOmvtQ0fng.jpeg" alt="Producto 1">
+                <h3>Producto 1</h3>
+                <p>Un disfraz increíble para tus aventuras de cosplay. Incluye todos los accesorios necesarios.</p>
+                <button class="add-to-cart">Agregar al carrito</button>
+            </div>
+            <div class="producto">
+                <img src="https://static1.cbrimages.com/wordpress/wp-content/uploads/2024/03/guts-berserker-armor-figure.jpg?q=50&fit=crop&w=1100&h=550&dpr=1.5" alt="Producto 2">
+                <h3>Producto 2</h3>
+                <p>Disfraz detallado con acabados de alta calidad. Ideal para eventos y competiciones.</p>
+                <button class="add-to-cart">Agregar al carrito</button>
+            </div>
+        </section>
+        <section id="productos-berserk">
+            <h2>Productos de Berserk</h2>
+            <div class="producto">
+                <img src="https://pics.craiyon.com/2023-07-13/256b9393605c4f4c8cac7e618316f183.webp" alt="Producto Berserk 1">
+                <h3>Producto Berserk 1</h3>
+                <p>Traje de Guts con detalles precisos y materiales de alta calidad.</p>
+                <button class="add-to-cart">Agregar al carrito</button>
+            </div>
+            <div class="producto">
+                <img src="https://images.bigbadtoystore.com/images/p/full/2023/10/af8b4e72-33d0-483d-bbe6-6cc2c91f4a25.jpg" alt="Producto Berserk 2">
+                <h3>Producto Berserk 2</h3>
+                <p>Figura de Guts en su armadura Berserker. Un artículo imprescindible para los fans.</p>
+                <button class="add-to-cart">Agregar al carrito</button>
+            </div>
+        </section>
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <form>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" required></textarea>
+                
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+        <section id="carrito">
+            <h2>Carrito de Compras</h2>
+            <div id="items-carrito"></div>
+            <button id="checkout">Proceder al Pago</button>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
 
