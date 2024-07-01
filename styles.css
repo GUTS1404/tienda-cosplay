@@ -4,14 +4,14 @@ body {
     background-size: cover;
     margin: 0;
     padding: 0;
-    color: white;
+    color: #fff; /* Texto en blanco para mejor contraste */
 }
 
 header {
-    background-color: rgba(51, 51, 51, 0.8); /* semi-transparent background */
+    background-color: rgba(0, 0, 0, 0.8); /* Fondo negro semitransparente */
     padding: 1em;
     text-align: center;
-    color: white;
+    color: #ff0000; /* Texto en rojo */
 }
 
 nav ul {
@@ -25,25 +25,25 @@ nav ul li {
 }
 
 nav ul li a {
-    color: white;
+    color: #ff0000; /* Enlaces en rojo */
     text-decoration: none;
 }
 
 main {
     padding: 1em;
-    background-color: rgba(0, 0, 0, 0.5); /* semi-transparent background */
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo negro semitransparente */
     border-radius: 10px;
     margin: 1em;
 }
 
 h1, h2 {
-    color: white;
+    color: #ff0000; /* Títulos en rojo */
 }
 
 .producto {
-    background-color: rgba(255, 255, 255, 0.8); /* semi-transparent background */
+    background-color: rgba(255, 0, 0, 0.8); /* Fondo rojo semitransparente */
     border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); /* Sombra negra */
     margin-bottom: 1em;
     padding: 1em;
     text-align: center;
@@ -53,6 +53,7 @@ h1, h2 {
     max-width: 100%;
     height: auto;
     border-radius: 8px;
+    border: 2px solid #000; /* Borde negro */
 }
 
 .producto h3 {
@@ -60,12 +61,12 @@ h1, h2 {
 }
 
 .producto p {
-    color: #666;
+    color: #000; /* Texto en negro */
 }
 
 button {
-    background-color: #333;
-    color: white;
+    background-color: #ff0000; /* Fondo rojo */
+    color: #000; /* Texto en negro */
     border: none;
     padding: 0.5em 1em;
     border-radius: 5px;
@@ -73,6 +74,7 @@ button {
 }
 
 button:hover {
-    background-color: #555;
+    background-color: #cc0000; /* Fondo rojo más oscuro al pasar el cursor */
 }
+
 
