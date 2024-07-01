@@ -71,10 +71,89 @@ button {
     padding: 0.5em 1em;
     border-radius: 5px;
     cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s; /* Añadimos transiciones */
 }
 
 button:hover {
     background-color: #cc0000; /* Fondo rojo más oscuro al pasar el cursor */
+    transform: scale(1.1); /* Agrandar un poco el botón */
 }
+
+.producto {
+    background-color: rgba(255, 0, 0, 0.8); /* Fondo rojo semitransparente */
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); /* Sombra negra */
+    margin-bottom: 1em;
+    padding: 1em;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s; /* Añadimos transiciones */
+}
+
+.producto:hover {
+    transform: translateY(-10px); /* Levantar la tarjeta al pasar el cursor */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7); /* Sombra más intensa */
+}
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.producto {
+    background-color: rgba(255, 0, 0, 0.8); /* Fondo rojo semitransparente */
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); /* Sombra negra */
+    margin-bottom: 1em;
+    padding: 1em;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s; /* Añadimos transiciones */
+    animation: fadeInUp 0.6s ease-out; /* Añadimos la animación de entrada */
+}
+@keyframes slideInFromLeft {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.8); /* Fondo negro semitransparente */
+    padding: 1em;
+    text-align: center;
+    color: #ff0000; /* Texto en rojo */
+    animation: slideInFromLeft 1s ease-out; /* Animación de deslizar desde la izquierda */
+}
+nav ul li a {
+    color: #ff0000; /* Enlaces en rojo */
+    text-decoration: none;
+    position: relative;
+    display: inline-block;
+}
+
+nav ul li a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #ff0000;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+nav ul li a:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
 
 
